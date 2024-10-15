@@ -3723,7 +3723,7 @@ clean: profile-clean coverage-clean cocciclean
 	$(RM) $(htmldocs).tar.gz $(manpages).tar.gz
 	$(MAKE) -C Documentation/ clean
 	$(RM) Documentation/GIT-EXCLUDED-PROGRAMS
-	$(RM) -r contrib/libgit-rs/libgit-sys/target
+	$(RM) -r contrib/libgit-rs/target contrib/libgit-rs/libgit-sys/target
 	$(RM) -r contrib/libgit-rs/libgit-sys/partial_symbol_export.o
 	$(RM) -r contrib/libgit-rs/libgit-sys/hidden_symbol_export.o
 	$(RM) -r contrib/libgit-rs/libgit-sys/libgitpub.a
