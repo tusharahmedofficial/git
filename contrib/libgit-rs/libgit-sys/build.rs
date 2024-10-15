@@ -14,7 +14,7 @@ pub fn main() -> std::io::Result<()> {
         .env_remove("PROFILE")
         .current_dir(git_root.clone())
         .args([
-            "CFLAGS=-fvisibility=hidden",
+            "INCLUDE_LIBGIT_RS=YesPlease",
             "contrib/libgit-rs/libgit-sys/libgitpub.a",
         ])
         .output()
