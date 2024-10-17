@@ -16,7 +16,7 @@
 #    and second line is the subject of the message.
 #
 
-use 5.008001;
+use 5.026000;
 use strict;
 use warnings $ENV{GIT_PERL_FATAL_WARNINGS} ? qw(FATAL all) : ();
 use Getopt::Long;
