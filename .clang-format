@@ -32,6 +32,9 @@ AlignConsecutiveAssignments: false
 # double b = 3.14;
 AlignConsecutiveDeclarations: false
 
+# Align consecutive macro definitions.
+AlignConsecutiveMacros: true
+
 # Align escaped newlines as far left as possible
 # #define A   \
 #   int aaaa; \
@@ -39,10 +42,9 @@ AlignConsecutiveDeclarations: false
 #   int cccccccc;
 AlignEscapedNewlines: Left
 
-# Align operands of binary and ternary expressions
-# int aaa = bbbbbbbbbbb +
-#           cccccc;
-AlignOperands: true
+# Don't enforce alignment after linebreaks and instead
+# rely on the ContinuationIndentWidth value.
+AlignOperands: false
 
 # Don't align trailing comments
 # int a; // Comment a
@@ -209,13 +211,14 @@ KeepEmptyLinesAtTheStartOfBlocks: false
 
 # Penalties
 # This decides what order things should be done if a line is too long
-PenaltyBreakAssignment: 10
-PenaltyBreakBeforeFirstCallParameter: 30
-PenaltyBreakComment: 10
+PenaltyBreakAssignment: 5
+PenaltyBreakBeforeFirstCallParameter: 5
+PenaltyBreakComment: 5
 PenaltyBreakFirstLessLess: 0
-PenaltyBreakString: 10
-PenaltyExcessCharacter: 100
-PenaltyReturnTypeOnItsOwnLine: 60
+PenaltyBreakOpenParenthesis: 300
+PenaltyBreakString: 5
+PenaltyExcessCharacter: 10
+PenaltyReturnTypeOnItsOwnLine: 300
 
 # Don't sort #include's
 SortIncludes: false
